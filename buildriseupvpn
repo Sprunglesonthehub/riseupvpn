@@ -1,0 +1,5 @@
+if [ ls /usr/bin/ | grep go != go ] ; then
+  sudo pacman -Syy go --noconfirm 
+fi
+
+makepkg --sign
